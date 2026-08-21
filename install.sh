@@ -21,7 +21,7 @@ set -euo pipefail
 #  레포지토리를 푸시하기 전에 GITHUB_USER 를 반드시 수정하세요.
 #  (환경변수로도 지정 가능: GITHUB_USER=xxx bash install.sh)
 # ----------------------------------------------------------------------------
-GITHUB_USER="${GITHUB_USER:-YOUR_GITHUB_USERNAME}"
+GITHUB_USER="${GITHUB_USER:-njuyoung35}"
 REPO_NAME="${REPO_NAME:-compdecomp}"
 BRANCH="${BRANCH:-main}"
 
