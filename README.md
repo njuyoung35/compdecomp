@@ -20,18 +20,17 @@
 
 ```bash
 # 방법 1: 바로 실행 (파일이 남지 않음)
-curl -fsSL https://raw.githubusercontent.com/<USERNAME>/compdecomp/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/njuyoung35/compdecomp/main/install.sh | bash
 
 # 방법 2: 파일로 받아 실행 후 자동 삭제
-curl -fsSL https://raw.githubusercontent.com/<USERNAME>/compdecomp/main/install.sh -o install.sh
+curl -fsSL https://raw.githubusercontent.com/njuyoung35/compdecomp/main/install.sh -o install.sh
 ./install.sh
 ```
 
 이미 같은 이름의 파일이 있으면 `파일명.bak_<타임스탬프>` 로 백업한 뒤 덮어씁니다.
 
-> `<USERNAME>` 은 레포지토리 소유자의 GitHub 사용자명으로 바꾸세요.
-> 푸시 전에 `install.sh` 상단의 `GITHUB_USER` 값도 반드시 수정해야 합니다.
-> (`GITHUB_USER=xxx bash install.sh` 형태로 환경변수 지정도 가능)
+> `install.sh` 상단의 `GITHUB_USER` 는 이미 `njuyoung35` 로 설정되어 있습니다.
+> 환경변수로도 덮어쓸 수 있습니다: `GITHUB_USER=xxx bash install.sh`
 
 ## 사용법
 
@@ -48,10 +47,8 @@ cat COMPRESS-TARGETS.txt
 
 자세한 내용은 `NOTICE.txt` 를 참고하세요.
 
-## 레포지토리 만들기 (현재 원격 없음)
+## 레포지토리
 
-```bash
-# GitHub 에서 빈 레포지토리를 만든 뒤:
-git remote add origin git@github.com:<USERNAME>/compdecomp.git
-git push -u origin main
-```
+- 원격: https://github.com/njuyoung35/compdecomp
+- 브랜치: `main`
+- 설치 명령어는 위 "설치 (curl 한 줄)" 섹션의 URL 그대로 사용하면 됩니다.
